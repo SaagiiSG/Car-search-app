@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cars{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+   
+}
+.car{
+    width: 500px;
+    height: 300px;
+    margin: 8px 0;
+    border-radius: 32px;
+    transition: 300ms;
+    display: flex;
+    justify-content: space-between;
+    border: 2px dashed silver;
+}
+.car > .p{
+    position: inherit;
+    padding-left: 20px ;
+    z-index: 0;
+    color: #333;
+    height: 300px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    overflow: hidden;
+}
+.p > span{
+    width: 100%;
+    overflow: hidden;
+
+}
+span.bold{
+    font-weight: bold;
+}
+.car:hover{
+    width: 700px;
+    height: 300px;
+}
+
+.car img{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+.color-picker{
+    margin-left: -24px;
+    width: 220px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.color-picker > span.red{
+    background: #911;
+    color: #911;
+    cursor: pointer;
+}
+.color-picker > span.white{
+    background: #E0dbd1;
+    cursor: pointer;
+}
+.color-picker > span.black{
+    background: #333;
+    cursor: pointer;
+}
+.color-picker > span.grey{
+    background: #bfbdbc;
+    color: #bfbdbc;
+    cursor: pointer;
+}
+.color-picker > span{
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 16px;
+}
+.overlay{
+    transition: 200ms;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+}
+.overlay:hover{
+    opacity: 1;
+}
+input{
+    padding-left: 68px;
+    width: 264px;
+    height: 36px;
+    border: 2px solid gold ;
+    border-radius: 24px;
+}
+div.devider{
+    margin-top :24px;
+    margin-bottom: 16px;
+    width: 83%;
+    height: 2px;
+    background-color: #333;
+    overflow: hidden;
+}
